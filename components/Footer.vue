@@ -6,12 +6,12 @@
               <div class="logo">
                 <nuxt-link to="/">
                   <h1 class="text-xl font-semibold text-gray-700"> <span
-                      class="text-primary font-bold">jay</span>ueno</h1>
+                      class="text-primary font-bold">Jun Ueno</span> Portfolio</h1>
                 </nuxt-link>
               </div>
 
               <div class="my-5 md:my-0 order-last md:order-none text-center">
-                  <p class="text-lg font-semibold text-gray-600">© 2021 Jay Ueno - All rights reserved.</p>
+                  <p class="text-lg font-semibold text-gray-600">© 2021 Jun Ueno - All rights reserved.</p>
               </div>
               
               <div>
