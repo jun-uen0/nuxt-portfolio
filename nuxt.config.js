@@ -4,7 +4,7 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Portfolio - Jun Ueno',
+    title: 'Jun Ueno',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -35,7 +35,21 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/axios',
+    ['nuxt-mail', {
+      message: {
+        to: 'hello@jaysan.io',
+      },
+      smtp: {
+        host: 'smtp.mailtrap.io',
+        port: 2525,
+        auth: {
+          user: 'username',
+          pass: 'password'
+        },
+      },
+    }],
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

@@ -13,8 +13,10 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 /* Plugins */
 
 import nuxt_plugin_plugin_5e1e4510 from 'nuxt_plugin_plugin_5e1e4510' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_axios_6fcd06e4 from 'nuxt_plugin_axios_6fcd06e4' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_pluginclient_17572cf4 from 'nuxt_plugin_pluginclient_17572cf4' // Source: ./content/plugin.client.js (mode: 'client')
 import nuxt_plugin_pluginserver_7d109e7c from 'nuxt_plugin_pluginserver_7d109e7c' // Source: ./content/plugin.server.js (mode: 'server')
+import nuxt_plugin_distplugin256abadf_2ca2e1c8 from 'nuxt_plugin_distplugin256abadf_2ca2e1c8' // Source: ./dist.plugin.256abadf.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -43,7 +45,11 @@ Vue.component(Nuxt.name, Nuxt)
 
 Object.defineProperty(Vue.prototype, '$nuxt', {
   get() {
-    return this.$root.$options.$nuxt
+    const globalNuxt = this.$root.$options.$nuxt
+    if (process.client && !globalNuxt && typeof window !== 'undefined') {
+      return window.$nuxt
+    }
+    return globalNuxt
   },
   configurable: true
 })
@@ -53,14 +59,14 @@ Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n
 const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
 async function createApp(ssrContext, config = {}) {
-  const router = await createRouter(ssrContext)
+  const router = await createRouter(ssrContext, config)
 
   // Create Root instance
 
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Portfolio - Jun Ueno","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"Jun Ueno","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
     router,
     nuxt: {
@@ -178,12 +184,20 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_plugin_5e1e4510(app.context, inject)
   }
 
+  if (typeof nuxt_plugin_axios_6fcd06e4 === 'function') {
+    await nuxt_plugin_axios_6fcd06e4(app.context, inject)
+  }
+
   if (process.client && typeof nuxt_plugin_pluginclient_17572cf4 === 'function') {
     await nuxt_plugin_pluginclient_17572cf4(app.context, inject)
   }
 
   if (process.server && typeof nuxt_plugin_pluginserver_7d109e7c === 'function') {
     await nuxt_plugin_pluginserver_7d109e7c(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_distplugin256abadf_2ca2e1c8 === 'function') {
+    await nuxt_plugin_distplugin256abadf_2ca2e1c8(app.context, inject)
   }
 
   // Lock enablePreview in context
@@ -193,26 +207,33 @@ async function createApp(ssrContext, config = {}) {
     }
   }
 
-  // If server-side, wait for async component to be resolved first
-  if (process.server && ssrContext && ssrContext.url) {
-    await new Promise((resolve, reject) => {
-      router.push(ssrContext.url, resolve, (err) => {
-        // https://github.com/vuejs/vue-router/blob/v3.4.3/src/util/errors.js
-        if (!err._isRouter) return reject(err)
-        if (err.type !== 2 /* NavigationFailureType.redirected */) return resolve()
+  // Wait for async component to be resolved first
+  await new Promise((resolve, reject) => {
+    // Ignore 404s rather than blindly replacing URL in browser
+    if (process.client) {
+      const { route } = router.resolve(app.context.route.fullPath)
+      if (!route.matched.length) {
+        return resolve()
+      }
+    }
+    router.replace(app.context.route.fullPath, resolve, (err) => {
+      // https://github.com/vuejs/vue-router/blob/v3.4.3/src/util/errors.js
+      if (!err._isRouter) return reject(err)
+      if (err.type !== 2 /* NavigationFailureType.redirected */) return resolve()
 
-        // navigated to a different route in router guard
-        const unregister = router.afterEach(async (to, from) => {
+      // navigated to a different route in router guard
+      const unregister = router.afterEach(async (to, from) => {
+        if (process.server && ssrContext && ssrContext.url) {
           ssrContext.url = to.fullPath
-          app.context.route = await getRouteData(to)
-          app.context.params = to.params || {}
-          app.context.query = to.query || {}
-          unregister()
-          resolve()
-        })
+        }
+        app.context.route = await getRouteData(to)
+        app.context.params = to.params || {}
+        app.context.query = to.query || {}
+        unregister()
+        resolve()
       })
     })
-  }
+  })
 
   return {
     app,
