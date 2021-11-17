@@ -8,8 +8,8 @@ You can directly use them in pages and other components without the need to impo
 
 - `<Footer>` | `<footer>` (components/Footer.vue)
 - `<Header>` | `<header>` (components/Header.vue)
+- `<Introduction>` | `<introduction>` (components/Introduction.vue)
 - `<Projects>` | `<projects>` (components/Projects.vue)
 - `<Search>` | `<search>` (components/Search.vue)
 - `<Social>` | `<social>` (components/Social.vue)
 - `<TechStack>` | `<tech-stack>` (components/TechStack.vue)
-- `<Introduction>` | `<introduction>` (components/introduction.vue)

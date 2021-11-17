@@ -5,6 +5,9 @@
   "Header": {
     "description": "Auto imported from components/Header.vue"
   },
+  "Introduction": {
+    "description": "Auto imported from components/Introduction.vue"
+  },
   "Projects": {
     "description": "Auto imported from components/Projects.vue"
   },
@@ -16,8 +19,5 @@
   },
   "TechStack": {
     "description": "Auto imported from components/TechStack.vue"
-  },
-  "Introduction": {
-    "description": "Auto imported from components/introduction.vue"
   }
 }
