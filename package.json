@@ -1,5 +1,5 @@
 {
-  "name": "Monotone",
+  "name": "Jun Ueno",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -11,6 +11,7 @@
   "dependencies": {
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/i18n": "^7.2.0",
     "@tailwindcss/typography": "^0.4.0",
     "boxicons": "^2.0.7",
     "core-js": "^3.6.5",
