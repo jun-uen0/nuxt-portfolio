@@ -11,7 +11,7 @@
           
           <!-- 言語切り替えボタン -->
           <div v-for="locale in availableLocales" :key="locale.code">
-            <button @click="() => changeLocale(locale.code)">
+            <button @click="() => changeLocale(locale.code)" class="bg-indigo-600 hover:bg-indigo-700 px-3 py-2 text-sm text-gray-200 font-semibold rounded-full">
               {{ $t(locale.name) }}
             </button>
           </div>

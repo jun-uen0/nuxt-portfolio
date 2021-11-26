@@ -3,5 +3,27 @@
   "hello": "Hello, I am jun",
   "developer": "I am a Web Software Developer",
   "work": "I build websites and web apps",
-  "situation":"Currently looking for a job. One of my dream is becoming a blockchain developer. Work hard, study hard."
+  "situation":"Currently looking for a job. One of my dream is becoming a blockchain developer. Work hard, study hard.",
+  "see" : "See Project",
+  "code": "Source Code",
+  "my-project": "Featured Projects",
+  "techstacks": "Tech Stacks I use ",
+  "project": {
+    "gas": {
+      "title": "Free Translate Web API using Google Apps Script",
+      "description": "Nowadays, you can translate text files into any language. GCP, Bing Microsoft Translator, and so on. However, it costs a lot. You can use them freely until the limit. Although, someone figured out that you can use GCP translate for free. Google Apps Script has its original methods to use Google API, such as Maps API, YouTube API, and Translate API. They are all free. Each method has limitations. It would just stop. You don't need to register your credit card. In this project, you can create your own translate web API. See source code and try it."
+    },
+    "videochat": {
+      "title": "Video chat app (Text and Translate)",
+      "description": "I created a video app that interprets a speaker's language into the listener's language. It's using Google Cloud Translate, but it's completely free. It's because I use Google Translate App as one of the Backend systems that translates the text."
+    },
+    "smartcontract": {
+      "title": "Smart Contract App using Nuxt.js",
+      "description": "You can make a smart contract with Ethereum and connect to your Metamask account. The framework is Nuxt.js. You can create your own chian with AWS."
+    },
+    "example": {
+      "title": "",
+      "description": ""
+    }
+  }
 }
