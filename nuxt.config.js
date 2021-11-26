@@ -1,9 +1,5 @@
 export default {
-
-  // disable Nuxt cwarler for NetlifyCMS
-  generate: {
-    crawler: false
-  },
+  
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
