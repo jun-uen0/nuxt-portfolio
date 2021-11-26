@@ -37,20 +37,20 @@
           </div>
       </div>
     </nav>
+
     <div :class="[isOpen ? '' : 'hidden', 'md:hidden']">
         <div class="px-2 pt-2 pb-3 sm:px-3 bg-primary">
-            <nuxt-link to="portfolio" class="mobile-link focus:outline-none hover:text-gray-500">Projects
+            <!-- <nuxt-link to="portfolio" class="mobile-link focus:outline-none hover:text-gray-500">Projects
             </nuxt-link>
             <nuxt-link to="blog" class="mt-1 mobile-link focus:outline-none hover:text-gray-500">Blog
             </nuxt-link>
             <nuxt-link to="about" class="mt-1 mobile-link focus:outline-none hover:text-gray-500">About
             </nuxt-link>
             <nuxt-link to="contact" class="mt-1 mobile-link focus:outline-none hover:text-gray-500">
-              Contact</nuxt-link>
-            <nuxt-link to="credits" class="mt-1 mobile-link focus:outline-none hover:text-gray-500">
-              Credits</nuxt-link>
+              Contact</nuxt-link> -->
         </div>
     </div>
+
   </div>
 </template>
 
