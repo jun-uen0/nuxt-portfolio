@@ -4,17 +4,24 @@
       <div class="px-10 flex justify-between items-center">
           <div class="logo">
             <nuxt-link to="/">
-                <h1 class="text-2xl font-semibold text-gray-700"> <span class="text-primary font-bold">Portfolio</span> Jun Ueno</h1>
+                <h1 class="text-2xl font-semibold text-gray-700">
+                  <span class="text-primary font-bold">Portfolio</span> Jun Ueno</h1>
             </nuxt-link>
           </div>
-      
-          <div class="navbar hidden md:block">
+          
+          <!-- 言語切り替えボタン -->
+          <div v-for="locale in availableLocales" :key="locale.code">
+            <button @click="() => changeLocale(locale.code)">
+              {{ $t(locale.name) }}
+            </button>
+          </div>
+          <!-- <div class="navbar hidden md:block">
             <p>I am working on a Japanese page...</p>
-            <!-- <nuxt-link class="nav-link hover:text-primary" to="portfolio">Portfolio</nuxt-link>
+            <nuxt-link class="nav-link hover:text-primary" to="portfolio">Portfolio</nuxt-link>
             <nuxt-link class="nav-link hover:text-primary" to="blog">Blog</nuxt-link>
             <nuxt-link class="nav-link hover:text-primary" to="about">About</nuxt-link>
-            <nuxt-link class="nav-link hover:text-primary" to="contact">Contact</nuxt-link> -->
-          </div>
+            <nuxt-link class="nav-link hover:text-primary" to="contact">Contact</nuxt-link>
+          </div> -->
 
           <div class="ml-3 flex md:hidden">
             <!-- Mobile menu button -->
@@ -52,6 +59,11 @@
 <script>
 
   export default {
+    computed: {
+      availableLocales() {
+        return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
+      },
+    },
     components:{
       
     },
@@ -65,6 +77,16 @@
     methods: {
       toggle() {
         this.isOpen = !this.isOpen
+      },
+      // 言語切り替え リロードあり
+      // changeLocale(locale) {
+      //   this.$i18n.setLocaleCookie(locale)
+      //   this.$router.go(0)
+      // },
+      // 言語切り替え リロードなし
+      async changeLocale(locale) {
+        console.log(locale)
+        await this.$i18n.setLocale(locale)
       }
     }
   }

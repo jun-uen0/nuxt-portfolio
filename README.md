@@ -2,5 +2,5 @@
 Portfolio site using Nuxt.js<br>
 https://nuxt-portfolio-3at.pages.dev
 
-- Hosting : Cloudflare
+- Hosting : Cloudflare / Netlify
 - CSS Framework : Tailwind

@@ -7,6 +7,7 @@
   <div class="mt-16">
     <div class="flex justify-center items-center text-base font-semibold text-gray-600">
       <h4 class="text-center">Featured Projects </h4>
+      <!-- <h4 class="text-center">{{ $t(Featured Projects) }} </h4> -->
       <i class='bx bx-chevrons-down ml-1 mt-1'></i>
     </div>
 
