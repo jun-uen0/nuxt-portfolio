@@ -5,8 +5,7 @@
       <div class="flex flex-col items-center justify-between mt-6 md:mt-0 md:flex-row">
         <div class="logo">
         <nuxt-link to="/">
-          <h1 class="text-xl font-semibold text-gray-700"> <span
-            class="text-primary font-bold">Jun Ueno</span> Portfolio</h1>
+          <h1 class="text-xl font-semibold text-gray-700">Jun Ueno</h1>
         </nuxt-link>
         </div>
 

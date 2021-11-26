@@ -4,8 +4,7 @@
       <div class="px-10 flex justify-between items-center">
           <div class="logo">
             <nuxt-link to="/">
-                <h1 class="text-2xl font-semibold text-gray-700">
-                  <span class="text-primary font-bold">Portfolio</span> Jun Ueno</h1>
+                <h1 class="text-2xl font-semibold text-gray-700">Jun Ueno</h1>
             </nuxt-link>
           </div>
           
