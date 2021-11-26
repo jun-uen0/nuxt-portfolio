@@ -1,0 +1,38 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/Volumes/Macintosh HD - Data/Users/jumpeismacbookpro2.0/Documents/dev/nuxt-portfolio/pages/about.vue",
+    "chunkName": "pages/about"
+  },
+  {
+    "name": "blog",
+    "path": "/blog",
+    "component": "/Volumes/Macintosh HD - Data/Users/jumpeismacbookpro2.0/Documents/dev/nuxt-portfolio/pages/blog.vue",
+    "chunkName": "pages/blog"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "/Volumes/Macintosh HD - Data/Users/jumpeismacbookpro2.0/Documents/dev/nuxt-portfolio/pages/contact.vue",
+    "chunkName": "pages/contact"
+  },
+  {
+    "name": "portfolio",
+    "path": "/portfolio",
+    "component": "/Volumes/Macintosh HD - Data/Users/jumpeismacbookpro2.0/Documents/dev/nuxt-portfolio/pages/portfolio.vue",
+    "chunkName": "pages/portfolio"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Volumes/Macintosh HD - Data/Users/jumpeismacbookpro2.0/Documents/dev/nuxt-portfolio/pages/index.vue",
+    "chunkName": "pages/index"
+  },
+  {
+    "name": "slug",
+    "path": "/:slug",
+    "component": "/Volumes/Macintosh HD - Data/Users/jumpeismacbookpro2.0/Documents/dev/nuxt-portfolio/pages/_slug.vue",
+    "chunkName": "pages/_slug"
+  }
+]
