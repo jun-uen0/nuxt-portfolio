@@ -19,5 +19,8 @@
   },
   "TechStack": {
     "description": "Auto imported from components/TechStack.vue"
+  },
+  "ButtonSeeProjectAndCode": {
+    "description": "Auto imported from components/Button/SeeProjectAndCode.vue"
   }
 }

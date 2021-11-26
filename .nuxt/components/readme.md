@@ -13,3 +13,4 @@ You can directly use them in pages and other components without the need to impo
 - `<Search>` | `<search>` (components/Search.vue)
 - `<Social>` | `<social>` (components/Social.vue)
 - `<TechStack>` | `<tech-stack>` (components/TechStack.vue)
+- `<ButtonSeeProjectAndCode>` | `<button-see-project-and-code>` (components/Button/SeeProjectAndCode.vue)
