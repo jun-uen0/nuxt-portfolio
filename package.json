@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "JunUeno",
-=======
-  "name": "Jun Ueno",
->>>>>>> 2581f4b6da3a5ac688fda08f87a40d7137a28541
   "version": "1.0.0",
   "private": true,
   "scripts": {
