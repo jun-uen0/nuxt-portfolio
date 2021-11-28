@@ -36,10 +36,9 @@ export default {
       return new Date(date).toLocaleDateString('en', options)
     }
   },
-
-
-   async asyncData({ $content }) {
+  async asyncData({ $content }) {
     const posts = await $content("blog").fetch();
+    console.log(posts)
 
     return {
       posts,
