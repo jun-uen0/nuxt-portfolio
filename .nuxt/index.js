@@ -19,6 +19,7 @@ import nuxt_plugin_pluginmain_4a8d58f7 from 'nuxt_plugin_pluginmain_4a8d58f7' //
 import nuxt_plugin_axios_6fcd06e4 from 'nuxt_plugin_axios_6fcd06e4' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_pluginclient_17572cf4 from 'nuxt_plugin_pluginclient_17572cf4' // Source: ./content/plugin.client.js (mode: 'client')
 import nuxt_plugin_pluginserver_7d109e7c from 'nuxt_plugin_pluginserver_7d109e7c' // Source: ./content/plugin.server.js (mode: 'server')
+import nuxt_plugin_image_99bf0cee from 'nuxt_plugin_image_99bf0cee' // Source: ./image.js (mode: 'all')
 import nuxt_plugin_distplugin256abadf_2ca2e1c8 from 'nuxt_plugin_distplugin256abadf_2ca2e1c8' // Source: ./dist.plugin.256abadf.js (mode: 'all')
 
 // Component: <ClientOnly>
@@ -209,6 +210,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (process.server && typeof nuxt_plugin_pluginserver_7d109e7c === 'function') {
     await nuxt_plugin_pluginserver_7d109e7c(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_image_99bf0cee === 'function') {
+    await nuxt_plugin_image_99bf0cee(app.context, inject)
   }
 
   if (typeof nuxt_plugin_distplugin256abadf_2ca2e1c8 === 'function') {
