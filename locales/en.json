@@ -8,7 +8,11 @@
   "code": "Source Code",
   "my-project": "Featured Projects",
   "techstacks": "Tech Stacks I use ",
-  "welcome-to-blog": "Welcome to my blog.",
+  "read-more": "Read more",
+  "portfolio": "Portfolio",
+  "blog": "Blog",
+  "about": "About",
+  "contact": "Contact",
   "project": {
     "gas": {
       "title": "Free Translate Web API using Google Apps Script",

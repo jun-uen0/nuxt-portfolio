@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper-small">
     <div class="text-center mt-2 border-b-2 pb-3">
-      <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold">{{ $t('welcome-to-blog') }}</h3>
+      <h3 class="text-xl md:text-2xl lg:text-3xl text-gray-700 font-semibold">{{ $t('blog') }}</h3>
     </div>
     <Search />
     <div class="my-10 bg-gray-100 p-4 md:p-6 rounded-xl shadow-md" v-for="post of posts" :key="post.slug">
@@ -18,8 +18,8 @@
       </div>
 
       <div class=" mt-4">
-        <nuxt-link :to="'/' + post.slug" class="text-primary font-semibold hover:underline">Read more</nuxt-link>
-        <nuxt-link :to="post.slug" class="text-primary font-semibold hover:underline">{{ post.slug }}</nuxt-link>
+        <nuxt-link :to="'/' + post.slug" class="text-primary font-semibold hover:underline">{{ $t('read-more') }}</nuxt-link>
+        <!-- <nuxt-link :to="post.slug" class="text-primary font-semibold hover:underline">Read more</nuxt-link> -->
       </div>
     </div>
   </div>

@@ -9,6 +9,11 @@
   "my-project": "プロジェクト",
   "techstacks": "使用言語",
   "welcome-to-blog": "ブログページ",
+  "read-more": "読んでみる",
+  "portfolio": "プロジェクト",
+  "blog": "ブログ",
+  "about": "私について",
+  "contact": "お問い合わせ",
   "project": {
     "gas": {
       "title": "GoogleAppsScriptを活用した無料翻訳アプリ",

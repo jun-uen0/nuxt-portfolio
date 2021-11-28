@@ -8,19 +8,19 @@
             </nuxt-link>
           </div>
           
+          <div class="navbar hidden md:block" v-for="locale in availableLocales" :key="locale.code">
           <!-- 言語切り替えボタン -->
-          <div v-for="locale in availableLocales" :key="locale.code">
-            <button @click="() => changeLocale(locale.code)" class="bg-indigo-600 hover:bg-indigo-700 px-3 py-2 text-sm text-gray-200 font-semibold rounded-full">
-              {{ $t(locale.name) }}
-            </button>
+            <!-- <div v-for="locale in availableLocales" :key="locale.code">
+              <button @click="() => changeLocale(locale.code)" class="bg-indigo-600 hover:bg-indigo-700 px-3 py-2 text-sm text-gray-200 font-semibold rounded-full">
+                {{ $t(locale.name) }}
+              </button>
+            </div> -->
+            <nuxt-link class="nav-link hover:text-primary" to="portfolio">{{ $t('portfolio') }}</nuxt-link>
+            <nuxt-link class="nav-link hover:text-primary" to="blog">{{ $t('blog') }}</nuxt-link>
+            <nuxt-link class="nav-link hover:text-primary" to="about">{{ $t('about') }}</nuxt-link>
+            <nuxt-link class="nav-link hover:text-primary" to="contact">{{ $t('contact') }}</nuxt-link>
+            <button @click="() => changeLocale(locale.code)" class="nav-link hover:text-primary">{{ $t(locale.name) }}</button>
           </div>
-          <!-- <div class="navbar hidden md:block">
-            <p>I am working on a Japanese page...</p>
-            <nuxt-link class="nav-link hover:text-primary" to="portfolio">Portfolio</nuxt-link>
-            <nuxt-link class="nav-link hover:text-primary" to="blog">Blog</nuxt-link>
-            <nuxt-link class="nav-link hover:text-primary" to="about">About</nuxt-link>
-            <nuxt-link class="nav-link hover:text-primary" to="contact">Contact</nuxt-link>
-          </div> -->
 
           <div class="ml-3 flex md:hidden">
             <!-- Mobile menu button -->
