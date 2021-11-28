@@ -39,7 +39,7 @@ export default {
   async asyncData({ $content }) {
     const posts = await $content("blog").fetch();
     console.log(posts)
-
+    
     return {
       posts,
     };
