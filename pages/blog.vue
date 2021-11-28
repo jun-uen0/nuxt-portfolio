@@ -11,7 +11,7 @@
       </div>
 
       <div class="mt-2">
-        <nuxt-link :to="post.slug"
+        <nuxt-link :to="'/' + post.slug"
           class="text-xl md:text-2xl text-gray-700 font-bold hover:text-gray-600 hover:underline">{{ post.title }}
         </nuxt-link>
         <p class="mt-2 text-base lg:text-lg text-gray-700">{{ post.description }}</p>
