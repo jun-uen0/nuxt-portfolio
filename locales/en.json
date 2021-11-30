@@ -11,8 +11,12 @@
   "read-more": "Read more",
   "portfolio": "Portfolio",
   "blog": "Blog",
-  "about": "About",
   "contact": "Contact",
+  "about": {
+    "title": "About me",
+    "name": "Jun Ueno",
+    "description": "Love camping, programming. I’m currently open to a new job opportunely. My favorite language is JavaScript, and frame-work is Vue.js/Nuxt.js. Also, I am a big fan of blockchain technology. My gaol as a web developer is becoming a blockchain developer. Backend-dev is for Laravel/PHP <3"
+  },
   "project": {
     "gas": {
       "title": "Free Translate Web API using Google Apps Script",
