@@ -1,5 +1,5 @@
 ---
-title: JavaScriptの配列操作
+title: 【JavaScript】配列操作
 date: 2021-11-27T11:19:42.982Z
 description: アプリやテストで学んだJavaScriptの配列操作まとめ
 tag: JavaScript
