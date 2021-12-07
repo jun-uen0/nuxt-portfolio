@@ -1,5 +1,5 @@
 ---
-title: SQL言語を1から復習
+title: 【SQL】SQL言語を1から復習
 date: 2021-12-03T00:15:17.274Z
 description: なんとなく使っていたSQL言語を体系的に学び直す
 ---
