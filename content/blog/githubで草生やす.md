@@ -2,6 +2,7 @@
 title: 【Git】GitHubで草生やす
 date: 2021-11-30T00:56:19.509Z
 description: GitHubでコントリビューション草が生える条件
+tag: Git
 ---
 ### 草生やす理由
 

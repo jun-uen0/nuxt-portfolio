@@ -2,6 +2,7 @@
 title: 【UNIX】sudo
 date: 2021-12-10T03:26:29.820Z
 description: sudoを調べてみたら歴史背景とか面白すぎた。
+tag: UNIX
 ---
 ### なんのための機能か
 

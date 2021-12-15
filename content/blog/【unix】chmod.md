@@ -2,6 +2,7 @@
 title: 【UNIX】chmod
 date: 2021-12-12T02:03:40.107Z
 description: chmod でできること、オプションや権限付与の読み方を学ぶ
+tag: UNIX
 ---
 ### なんのための機能か
 

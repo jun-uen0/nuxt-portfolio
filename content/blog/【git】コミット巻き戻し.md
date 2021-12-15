@@ -2,6 +2,7 @@
 title: 【Git】コミット巻き戻し
 date: 2021-12-13T00:49:16.632Z
 description: Gitコマンドでコミットを巻き戻す (macOS ターミナル)
+tag: Git
 ---
 ### コミット巻き戻し
 

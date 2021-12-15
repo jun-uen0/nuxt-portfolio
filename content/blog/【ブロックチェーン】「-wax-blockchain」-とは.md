@@ -2,6 +2,7 @@
 title: 【ブロックチェーン】「 WAX blockchain」 とは
 date: 2021-12-06T00:33:35.717Z
 description: 「Create a Smart Contract on WAX blockchain including NFT RNG」
+tag: ブロックチェーン
 ---
 冒頭で紹介されている、「WAX Blockchain Developer Hive」はNFT関連のグッズ販売、構築を行えるツール。(WAX = Worldwide Asset eXchange)
 

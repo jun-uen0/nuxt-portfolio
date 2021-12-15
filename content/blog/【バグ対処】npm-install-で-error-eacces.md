@@ -2,6 +2,7 @@
 title: 【バグ対処】npm install で Error:EACCES
 date: 2021-12-09T04:45:26.232Z
 description: npm install をしようとしたら パラミッションエラーがでたため、調べながら解決してみる。
+tag: バグ対処
 ---
 ### 期待する処理
 

@@ -6,7 +6,7 @@
     <Search />
     <div class="my-10 bg-gray-100 p-4 md:p-6 rounded-xl shadow-md" v-for="post of posts" :key="post.slug">
       <div class="flex justify-between items-center">
-        <span class="font-semibold text-gray-600 text-sm">{{ formatDate(post.createdAt) }}</span>
+        <span class="font-semibold text-gray-600 text-sm">{{ formatDate(post.date) }}</span>
         <span class="px-3 py-1 bg-gray-600 text-white text-sm font-bold rounded">{{ post.tag }}</span>
       </div>
 
@@ -19,7 +19,6 @@
 
       <div class=" mt-4">
         <nuxt-link :to="'/' + post.slug" class="text-primary font-semibold hover:underline">{{ $t('read-more') }}</nuxt-link>
-        <!-- <nuxt-link :to="post.slug" class="text-primary font-semibold hover:underline">Read more</nuxt-link> -->
       </div>
     </div>
   </div>
@@ -38,9 +37,10 @@ export default {
     }
   },
   async asyncData({ $content }) {
-    const posts = await $content("blog").fetch();
-    console.log(posts)
-    
+    let posts = await $content("blog").fetch();
+    posts.sort((a, b) => {
+      return (a.date > b.date ? -1 : 1)
+    })
     return {
       posts,
     };
