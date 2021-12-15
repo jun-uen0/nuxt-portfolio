@@ -1,5 +1,5 @@
 ---
-title: NetlifyCMS
+title: 【Netlify】NetlifyCMS
 date: 2021-11-26T11:17:26.856Z
 description: NuxtアプリにNetlifyCMSを取り入れブログ管理画面を構築
 tag: netlify
