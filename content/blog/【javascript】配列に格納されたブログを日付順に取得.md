@@ -2,6 +2,7 @@
 title: 【JavaScript】配列に格納されたブログを日付順に取得
 date: 2021-12-15T08:56:07.368Z
 description: 軽微な変更でJavaScriptのソートを復習してみる。
+tag: JavaScript
 ---
 ### 始める前に
 
