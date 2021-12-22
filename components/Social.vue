@@ -4,6 +4,10 @@
         <i class='bx bxl-github'></i>
       </a>
 
+      <a class="social-link hover:text-primary" href="https://gitlab.com/jun-uen0" target="_blank" aria-label="Gitlab">
+        <i class='bx bxl-gitlab'></i>
+      </a>
+
       <a class="social-link hover:text-primary" href="https://twitter.com/home" target="_blank" aria-label="Twitter">
         <i class='bx bxl-twitter'></i>
       </a>
