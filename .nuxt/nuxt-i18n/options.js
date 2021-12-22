@@ -19,7 +19,7 @@ export const options = {
   sortRoutes: true,
   strategy: "no_prefix",
   lazy: true,
-  langDir: "/Volumes/Macintosh HD - Data/Users/jumpeismacbookpro2.0/Documents/dev/nuxt-portfolio/locales",
+  langDir: "/Volumes/Macintosh HD - Data/Users/jumpeismacbookpro2.0/Documents/dev/nuxt/nuxt-portfolio/locales",
   rootRedirect: null,
   detectBrowserLanguage: {"alwaysRedirect":false,"cookieCrossOrigin":false,"cookieDomain":null,"cookieKey":"i18n_redirected","cookieSecure":false,"fallbackLocale":"","onlyOnNoPrefix":false,"onlyOnRoot":false,"useCookie":true},
   differentDomains: false,
