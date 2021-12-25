@@ -1,5 +1,5 @@
 ---
-title: 【React】
+title: 【React】コンポーネント
 date: 2021-12-25T02:13:02.275Z
 description: Vue.jsと同じくReactにもコンポーネントという概念が存在する。飛ばさず、もう一度基礎から学び直す。
 tag: React
