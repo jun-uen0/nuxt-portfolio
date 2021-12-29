@@ -1,5 +1,5 @@
 ---
-title: CI環境の構築 (ESLint と Prettier)
+title: 【TypeScript】CI環境の構築 (ESLint と Prettier)
 date: 2021-12-28T03:16:29.396Z
 description: TypeScriptで便利なCI設定を各用語を理解しながら進める
 tag: TypeScript
