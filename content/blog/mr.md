@@ -1,8 +1,8 @@
 ---
-title: MR
+title: 【Firebase】ホスティングサービスを使ってみる
 date: 2021-12-29T00:36:39.002Z
 description: 「firebase deploy」コマンドでデプロイが完了してしまう便利設定。
-tag: Firestore
+tag: Firebase
 ---
 ### 実際に使用するFirebaseのサービス
 
@@ -16,8 +16,6 @@ tag: Firestore
 
 * firebase-tool がグローバルインストールされている
 * Firebaseプロジェクトの作成、及び FirestoreのDBが作成されている
-
-
 
 ### インストール手順 (ターミナル)
 
