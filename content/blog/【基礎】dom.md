@@ -1,8 +1,8 @@
 ---
 title: 【基礎】DOM
 date: 2021-12-26T01:36:06.218Z
-description: 基礎
-tag: Reactの仮想DOMを理解するにあたり、それまでふんわり理解していた「DOM」をもう一度基礎から学ぶ。
+description: Reactの仮想DOMを理解するにあたり、それまでふんわり理解していた「DOM」をもう一度基礎から学ぶ。
+tag: 基礎
 ---
 ### DOMとは
 
