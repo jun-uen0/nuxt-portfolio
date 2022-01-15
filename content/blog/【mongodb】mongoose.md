@@ -1,10 +1,10 @@
 ---
-title: 【MongoDB】mongoose
+title: 【MongoDB】Mongoose
 date: 2022-01-15T02:13:13.939Z
-description: mongoose を使った操作とSchema や Modelの基礎
+description: Mongoose を使った操作とSchema や Modelの基礎
 tag: MongoDB
 ---
-### `mongoose` とは
+### `Mongoose` とは
 
 呼：「マングース」
 
@@ -197,8 +197,6 @@ kitty.save().then(() => console.log('meow'));
   * `schemas.js` で作成された `Schema` 「Sake」をモデルクラスとして受け取る
   * コレクション「sakes」にアクセスし、フィールド「brand」に「醸し人九平次」を含むドキュメントを検索
   * node で実行し結果を表示
-
-
 
 ### 参考
 
