@@ -1,0 +1,33 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/button-see-project-and-code.js": "components/button-see-project-and-code.js",
+    "components/introduction.js": "components/introduction.js",
+    "components/projects.js": "components/projects.js",
+    "components/search.js": "components/search.js",
+    "components/tech-stack.js": "components/tech-stack.js",
+    "lang-ja.json.js": "lang-ja.json.js",
+    "pages/_slug.js": "pages/_slug.js",
+    "pages/about.js": "pages/about.js",
+    "pages/blog.js": "pages/blog.js",
+    "pages/contact.js": "pages/contact.js",
+    "pages/index.js": "pages/index.js",
+    "pages/portfolio.js": "pages/portfolio.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/button-see-project-and-code.js": "components/button-see-project-and-code.js.map",
+    "components/introduction.js": "components/introduction.js.map",
+    "components/projects.js": "components/projects.js.map",
+    "components/search.js": "components/search.js.map",
+    "components/tech-stack.js": "components/tech-stack.js.map",
+    "lang-ja.json.js": "lang-ja.json.js.map",
+    "pages/_slug.js": "pages/_slug.js.map",
+    "pages/about.js": "pages/about.js.map",
+    "pages/blog.js": "pages/blog.js.map",
+    "pages/contact.js": "pages/contact.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/portfolio.js": "pages/portfolio.js.map",
+    "server.js": "server.js.map"
+  }
+}

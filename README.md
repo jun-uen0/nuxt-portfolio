@@ -4,5 +4,3 @@ https://nuxt-portfolio-3at.pages.dev
 
 - Hosting : Cloudflare / Netlify
 - CSS Framework : Tailwind
-
-this is test line

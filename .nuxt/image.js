@@ -3,7 +3,7 @@ import { createImage} from '~image'
 import NuxtImg from '~image/components/nuxt-img.vue'
 import NuxtPicture from '~image/components/nuxt-picture.vue'
 
-import * as staticRuntime$0820 from '/Volumes/Macintosh HD - Data/Users/jumpeismacbookpro2.0/Documents/dev/nuxt/nuxt-portfolio/node_modules/@nuxt/image/dist/runtime/providers/static.js'
+import * as staticRuntime$5be2 from '/Users/junueno/Documents/dev/private/nuxt-portfolio/node_modules/@nuxt/image/dist/runtime/providers/static.js'
 
 const imageOptions = {
   "screens": {
@@ -30,7 +30,7 @@ const imageOptions = {
 }
 
 imageOptions.providers = {
-  ['static']: { provider: staticRuntime$0820, defaults: {} }
+  ['static']: { provider: staticRuntime$5be2, defaults: {} }
 }
 
 Vue.component(NuxtImg.name, NuxtImg)

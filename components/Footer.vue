@@ -10,7 +10,7 @@
         </div>
 
         <div class="my-5 md:my-0 order-last md:order-none text-center">
-          <p class="text-lg font-semibold text-gray-600">© 2021 Jun Ueno - All rights reserved.</p>
+          <p class="text-lg font-semibold text-gray-600">© {{ thisYear }} Jun Ueno - All rights reserved.</p>
         </div>
         
         <div>
@@ -26,6 +26,11 @@ import Social from '../components/Social.vue'
 export default {
   components: {
     Social
+  },
+  data() {
+    return {
+      thisYear: '2022',
+    }
   }
 }
 </script>

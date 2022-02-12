@@ -12,7 +12,6 @@
           <nuxt-link class="nav-link hover:text-primary" to="portfolio">{{ $t('portfolio') }}</nuxt-link>
           <nuxt-link class="nav-link hover:text-primary" to="blog">{{ $t('blog') }}</nuxt-link>
           <nuxt-link class="nav-link hover:text-primary" to="about">{{ $t('about.title') }}</nuxt-link>
-          <!-- <nuxt-link class="nav-link hover:text-primary" to="contact">{{ $t('contact') }}</nuxt-link> -->
           <button @click="() => changeLocale(locale.code)" class="nav-link hover:text-primary">{{ $t(locale.name) }}</button>
         </div>
 
@@ -44,8 +43,6 @@
         class="mt-1 mobile-link focus:outline-none hover:text-gray-500">
           {{ $t(locale.name) }}
         </a>
-        <!-- <nuxt-link to="contact" class="mt-1 mobile-link focus:outline-none hover:text-gray-500">Contact
-        </nuxt-link> -->
       </div>
     </div>
 

@@ -4,12 +4,12 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _1f17a793 = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
-const _1649a8e8 = () => interopDefault(import('../pages/blog.vue' /* webpackChunkName: "pages/blog" */))
-const _8b6e39b4 = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
-const _3cb48cce = () => interopDefault(import('../pages/portfolio.vue' /* webpackChunkName: "pages/portfolio" */))
-const _3ecf8258 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
-const _3d18e110 = () => interopDefault(import('../pages/_slug.vue' /* webpackChunkName: "pages/_slug" */))
+const _787682fe = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
+const _a04f0244 = () => interopDefault(import('../pages/blog.vue' /* webpackChunkName: "pages/blog" */))
+const _2fe812d8 = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
+const _06007cbc = () => interopDefault(import('../pages/portfolio.vue' /* webpackChunkName: "pages/portfolio" */))
+const _3906cd74 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _3c741004 = () => interopDefault(import('../pages/_slug.vue' /* webpackChunkName: "pages/_slug" */))
 
 const emptyFn = () => {}
 
@@ -24,27 +24,27 @@ export const routerOptions = {
 
   routes: [{
     path: "/about",
-    component: _1f17a793,
+    component: _787682fe,
     name: "about"
   }, {
     path: "/blog",
-    component: _1649a8e8,
+    component: _a04f0244,
     name: "blog"
   }, {
     path: "/contact",
-    component: _8b6e39b4,
+    component: _2fe812d8,
     name: "contact"
   }, {
     path: "/portfolio",
-    component: _3cb48cce,
+    component: _06007cbc,
     name: "portfolio"
   }, {
     path: "/",
-    component: _3ecf8258,
+    component: _3906cd74,
     name: "index"
   }, {
     path: "/:slug",
-    component: _3d18e110,
+    component: _3c741004,
     name: "slug"
   }],
 

@@ -2,43 +2,43 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "/Volumes/Macintosh HD - Data/Users/jumpeismacbookpro2.0/Documents/dev/nuxt/nuxt-portfolio/pages/about.vue",
+    "component": "/Users/junueno/Documents/dev/private/nuxt-portfolio/pages/about.vue",
     "chunkName": "pages/about",
-    "_name": "_1f17a793"
+    "_name": "_787682fe"
   },
   {
     "name": "blog",
     "path": "/blog",
-    "component": "/Volumes/Macintosh HD - Data/Users/jumpeismacbookpro2.0/Documents/dev/nuxt/nuxt-portfolio/pages/blog.vue",
+    "component": "/Users/junueno/Documents/dev/private/nuxt-portfolio/pages/blog.vue",
     "chunkName": "pages/blog",
-    "_name": "_1649a8e8"
+    "_name": "_a04f0244"
   },
   {
     "name": "contact",
     "path": "/contact",
-    "component": "/Volumes/Macintosh HD - Data/Users/jumpeismacbookpro2.0/Documents/dev/nuxt/nuxt-portfolio/pages/contact.vue",
+    "component": "/Users/junueno/Documents/dev/private/nuxt-portfolio/pages/contact.vue",
     "chunkName": "pages/contact",
-    "_name": "_8b6e39b4"
+    "_name": "_2fe812d8"
   },
   {
     "name": "portfolio",
     "path": "/portfolio",
-    "component": "/Volumes/Macintosh HD - Data/Users/jumpeismacbookpro2.0/Documents/dev/nuxt/nuxt-portfolio/pages/portfolio.vue",
+    "component": "/Users/junueno/Documents/dev/private/nuxt-portfolio/pages/portfolio.vue",
     "chunkName": "pages/portfolio",
-    "_name": "_3cb48cce"
+    "_name": "_06007cbc"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Volumes/Macintosh HD - Data/Users/jumpeismacbookpro2.0/Documents/dev/nuxt/nuxt-portfolio/pages/index.vue",
+    "component": "/Users/junueno/Documents/dev/private/nuxt-portfolio/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_3ecf8258"
+    "_name": "_3906cd74"
   },
   {
     "name": "slug",
     "path": "/:slug",
-    "component": "/Volumes/Macintosh HD - Data/Users/jumpeismacbookpro2.0/Documents/dev/nuxt/nuxt-portfolio/pages/_slug.vue",
+    "component": "/Users/junueno/Documents/dev/private/nuxt-portfolio/pages/_slug.vue",
     "chunkName": "pages/_slug",
-    "_name": "_3d18e110"
+    "_name": "_3c741004"
   }
 ]
