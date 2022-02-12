@@ -12,17 +12,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      thisYear: '2022',
-      myName: 'Jun Ueno'
-    }
-  }
-}
-</script>
-
 <style>
   .wrapper{
     @apply max-w-screen-xl mx-auto;
